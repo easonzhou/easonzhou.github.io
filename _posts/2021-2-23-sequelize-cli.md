@@ -254,7 +254,7 @@ module.exports = {
 ```
 Add a db scheduled event:
 
-Caveat: If you create events from browser or IDE, it has the session time zone set to your local time zone, so the event is scheduled based on your local timezone. While if you create the event from the migration file, there is no such session info (unless you specify it like in the line No.5 in the following code snippet) so it uses UTC timezone by default. reference
+`Caveat`: If you create events from browser or IDE, it has the session time zone set to your local time zone, so the event is scheduled based on your local timezone. While if you create the event from the migration file, there is no such session info (unless you specify it like in the line No.5 in the following code snippet) so it uses UTC timezone by default. [reference](https://stackoverflow.com/questions/48158573/why-does-mysql-5-7-even-scheduler-start-datetime-not-match-with-the-create-alter#:~:text=Times%20in%20the%20ON%20SCHEDULE,time%20zone%20in%20the%20mysql)
 ```
 'use strict';
 

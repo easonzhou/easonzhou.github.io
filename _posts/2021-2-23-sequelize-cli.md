@@ -30,6 +30,7 @@ npx sequelize migration:create --name test-npx
 It will create a migration skeleton under migrations folder in your project with the prefix of the current date and timestamp. So that the files under migrations folder can be sorted using the filename by default in the chronological order. 
 
 For example:
+
 ![migration files](/images/sequelize-files.png)
 
 Once the migration skeleton is created, you can start editing the skeleton to put down what you want to migrate.

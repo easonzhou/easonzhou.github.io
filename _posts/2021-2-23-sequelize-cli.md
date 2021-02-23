@@ -9,8 +9,6 @@ If you don’t know what’s `npx`, please check out this [youtube video](https:
 
 As a developer, when there is a need to change the SQL database, be it its schema, or stored procedure, or db events, we are very tempted to change it directly in the database. However, it’s not a very good practice, because when we try to deploy the solution from local environment to dev environment, or from dev environment to production environment, we may easily forget what we did in the source environment. Manually keeping track of all the changes in different environments is simply time-consuming, unreliable and prone to errors.
 
-![Messy room](/images/sequelize-files.png)
-
 So a version control on database changes are very necessary and can help us (without memorising all the changes done in the source environments) reproduce the changes again in the target environment. 
 
 **Solution**:
@@ -32,6 +30,7 @@ npx sequelize migration:create --name test-npx
 It will create a migration skeleton under migrations folder in your project with the prefix of the current date and timestamp. So that the files under migrations folder can be sorted using the filename by default in the chronological order. 
 
 For example:
+![migration files](/images/sequelize-files.png)
 
 Once the migration skeleton is created, you can start editing the skeleton to put down what you want to migrate.
 
